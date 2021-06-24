@@ -20,7 +20,7 @@ struct ContentView: View {
             
             VStack {
                 Image("diceeLogo")
-                Spacer()
+                Spacer().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 HStack {
                     diceView(n: leftDiceNumber)
                     
@@ -28,7 +28,7 @@ struct ContentView: View {
                     
                 }.padding(.horizontal)
                 
-                Spacer()
+                Spacer().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Button(action: {
                     self.leftDiceNumber=Int.random(in: 1...6)
                     self.rightDiceNumber=Int.random(in: 1...6)
